@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+    <ImageButton
+        android:id="@+id/dish_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_dish"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/dish_img"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Paneer Piza"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/more_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_below="@+id/dish_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Show more images"
+        android:textSize="20dp" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/more_image"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/share_link"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/share_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:text="Share"
+        android:padding="5dp"
+        android:layout_marginEnd="120dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/wiki_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_alignParentEnd="true"
+        android:text="open wiki"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>
